@@ -9,6 +9,6 @@ def GET_mg4():
   hex_string = '0123456789abcdef'
   str = "".join([random.choice(hex_string) for x in range(7)])
   hex_string1 = '0123456789abcdef'
-  str1 = "".join([random.choice(hex_string) for x in range(7)])
+  str1 = "".join([random.choice(hex_string1) for x in range(7)])
   response = jsonify({ "geom": ["9aa2aac", "59aaaa4", str, "51aa8c5" , str1, "559a655", "3638a26"]})
   return response, 200
